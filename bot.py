@@ -84,8 +84,8 @@ async def healthz():
 @app.get("/v1/metadata")
 async def metadata():
     return {
-        "team_name": "REPLACE_ME_TEAM_NAME",
-        "team_members": ["REPLACE_ME_YOUR_NAME"],
+        "team_name": "Anurag Tiwari",
+        "team_members": ["Anurag Tiwari"],
         "model": "rule-based-composer (no external LLM call; deterministic template engine over the 4-context framework)",
         "approach": (
             "Deterministic per-trigger-kind composer (26 trigger kinds handled) reading directly from the "
@@ -95,7 +95,7 @@ async def metadata():
             "reply layer detects auto-replies (repetition + canned-phrase heuristics), explicit intent "
             "transitions, and hostile/opt-out signals."
         ),
-        "contact_email": "REPLACE_ME@example.com",
+        "contact_email": "anuragtiwari_23ec030@dtu.ac.in",
         "version": "1.0.0",
         "submitted_at": datetime.now(timezone.utc).isoformat(),
     }
